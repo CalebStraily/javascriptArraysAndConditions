@@ -23,6 +23,7 @@ console.log(officeCharacters);
 console.log(officeCharacters.length);
 */
 
+/*
 let items = ["apple", "banana", "cherry", "date", "elderberry"]
 
 let firstItem = items[0];
@@ -57,3 +58,142 @@ colors[2] = "cyan";
 colors[4] = "orange";
 
 console.log(colors);
+
+
+let rng = Math.floor(Math.random() * Math.floor(colors.length));
+
+let number1 = Math.floor(2);
+console.log(number1);
+
+colors[2] = "cyan"
+colors.pop();
+colors.push("orange");
+// Output the results
+console.log(colors[rng]);
+*/
+
+//CONDITIONS
+
+let boo = false;
+console.log(boo);
+
+//"==" - "is equal to"
+
+let bar = 4 == 5 - 4;
+console.log(bar);
+
+let boo2 = "4";
+let boo3 = 4;
+let boo4 = 4;
+
+console.log(boo2 == boo3);
+
+//Strictly Equals to "==="
+
+console.log(boo2 === boo3);
+
+//Not equal to "!="
+
+console.log(boo3 != boo4);
+
+//Greater than ">"
+console.log(boo3 > 6);
+//!FALSE
+
+//Less than "<"
+console.log(boo3 < 6);
+//!TRUE
+
+//Less than or equal to "<="
+console.log(boo3 <= 4);
+//!?TRUE
+
+//Greater than or equal to ">="
+console.log(boo3 >= 5);
+//?False
+
+//LOGICAL Operators
+
+// AND = "&&"
+console.log("Double Ampersands: " + (4 == 4 && 3 == 3));
+
+// OR = "||"
+console.log("Double LINES: " + (4 == 3 || 3 == 3));
+
+// NOT = "!"
+console.log("NOT: " + (!false));
+
+//If statement
+
+if (boo3 == 4)
+{
+    console.log("HEY I'm THE NUMBER 4!");
+};
+
+let amHungry = true;
+
+//If/else statement
+
+if(amHungry)
+{
+    console.log("Let's eat! I want Chicken nuggies!");
+}
+else
+{
+    console.log("Let's keep coding! Yay!");
+};
+
+//Else if statement
+
+let howHungry = 75;
+
+if (amHungry === true && howHungry >= 75)
+{
+    console.log("I'm so hungry I could eat a horse.");
+}
+else if (amHungry === true && howHungry > 25)
+{
+    console.log("I'm hungry enough to eat cheez-itz.");
+}
+else if (amHungry === false && howHungry >= 25)
+{
+    console.log("I'm depressed.")
+}
+else
+{
+    console.log("I'm not that hungry.");
+}
+
+//Switch Statement
+switch (amHungry == true)
+{
+    case howHungry >= 75:
+    {
+        console.log("I'm so hungry I could eat a horse.");
+        break;
+    }
+    case howHungry >= 25:
+    {
+        console.log("I'm hungry enough to eat cheez-itz.");
+        break;
+    }
+    default:
+    {
+        console.log("I'm not that hungry.");
+        break;
+    }
+}
+
+switch (amHungry == false)
+{
+    case howHungry >= 25:
+    {
+        console.log("I'm depressed.");
+        break;
+    }
+    default:
+    {
+        console.log("I'm not actually hungry, but I'm still depressed.");
+        break;
+    }
+}
