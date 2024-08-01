@@ -72,6 +72,7 @@ colors.push("orange");
 console.log(colors[rng]);
 */
 
+/*
 //CONDITIONS
 
 let boo = false;
@@ -196,4 +197,144 @@ switch (amHungry == false)
         console.log("I'm not actually hungry, but I'm still depressed.");
         break;
     }
+}
+*/
+
+/*
+//EX. 1
+
+let favoriteFruits = ["Grapes", "Bananas", "Strawberries"];
+let fruitCheck = "Strawberries";
+
+let isInArray = false;
+//for loop example
+for (let i = 0; i < favoriteFruits.length; i++)
+{
+    if (fruitCheck == favoriteFruits[i])
+    {
+        console.log("fruitCheck is equal to: " + favoriteFruits[i]);
+        isInArray = true;
+    }
+}
+if (isInArray = false)
+{
+    console.log(fruitCheck + "is not in array.");
+}
+
+//if/else example
+if(fruitCheck == favoriteFruits[0])
+{
+    console.log("fruitCheck is equal to: " + favoriteFruits[0]);
+}
+else if(fruitCheck == favoriteFruits[1])
+{
+    console.log("fruitCheck is equal to: " + favoriteFruits[1]);
+}
+else if(fruitCheck == favoriteFruits[2])
+{
+    console.log("fruitCheck is equal to: " + favoriteFruits[2]);
+}
+else
+{
+    console.log(fruitCheck + " is not in the array.");
+}
+
+//EX. 2
+
+let grade = ["A", "B", "C", "D", "F"];
+let studentGrade = 85;
+
+if (studentGrade >= 93)
+{
+    console.log("Student made an: " + grade[0]);
+}
+else if (studentGrade <= 92 && studentGrade >= 84)
+{
+    console.log("Student made a: " + grade[1]);
+}
+else if (studentGrade <= 83 && studentGrade >= 74)
+{
+    console.log("Student made a: " + grade[2]);
+}
+else if (studentGrade <= 73 && studentGrade >= 65)
+{
+    console.log("Student made a: " + grade[3]);
+}
+else
+{
+    console.log("Student made an: " + grade[4]);
+}
+
+//EX. 3
+
+let dayOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+let currentDay = "Sunday";
+
+if (currentDay == dayOfWeek[0] || currentDay == dayOfWeek[1] || currentDay == dayOfWeek[2] 
+    || currentDay == dayOfWeek[3] || currentDay == dayOfWeek[4])
+{
+    console.log(currentDay + " is a weekday.");
+}
+else if (currentDay == dayOfWeek[5] || currentDay == dayOfWeek[6])
+{
+    console.log(currentDay + " is during the weekend.");
+}
+else
+{
+    console.log(currentDay + " is not a day of the week.");
+}
+
+//EX. 4
+
+let temperature = 66;
+let temperatureLevels = ["Cold", "Just Right", "Hot"];
+
+if (temperature <= 65)
+{
+    console.log("Temperature is: " + temperatureLevels[0]);
+}
+else if (temperature >= 66 && temperature <= 75)
+{
+    console.log("Temperature is: " + temperatureLevels[1]);
+}
+else if (temperature >= 76)
+{
+    console.log("Temperature is: " + temperatureLevels[2]);
+}
+
+//EX. 5
+
+let userNumber = -1;
+
+if (userNumber < 0)
+{
+    console.log("Number is negative.")
+}
+else if (userNumber == 0)
+{
+    console.log("Number is zero.")
+}
+else if (userNumber > 0)
+{
+    console.log("Number is positive.");
+}
+*/
+
+//Max of Two Number Exercise
+//Create a program that compares two numbers andl ogs the larger one to the console.
+
+let numberOne = 14;
+let numberTwo = 74;
+
+if (numberOne > numberTwo)
+{
+    console.log("Max number is Number One: " + numberOne);
+}
+else if (numberTwo > numberOne)
+{
+    console.log("Max number is Number Two: " + numberTwo);
+}
+else if (numberOne == numberTwo)
+{
+    console.log("Number One: " + numberOne + " and Number Two: " + numberTwo + " are the same and thus both max.");
 }
